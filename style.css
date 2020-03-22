@@ -1,0 +1,564 @@
+/*-----------------------------------------------------------------------------------
+
+	Template Name: Version College
+	Template URI: http://sabappy.com
+	Description: This is Version College web site. 
+	Author: SA Bappy
+	Author URI: http://sabappy.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Header Area 
+	3. Iteam Area
+	4. Footer Area
+
+-----------------------------------------------------------------------------------*/
+
+  /*****************************************************/
+ /**************    1. Typography   *******************/
+/*****************************************************/
+
+
+* {margin:0;padding:0}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	line-height:18px;
+	color:#000000;
+	background:#FFFFFF;
+}
+a {
+	text-decoration:none;
+	display: inline-block;
+}
+a:hover {
+	text-decoration:none;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin:0;
+	padding:0;
+}
+img {border:none;max-width:100%}
+ul {
+	list-style: none;
+	margin: 0;
+}
+h2{
+	
+}
+p{
+	
+}
+.align-center {
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	            -ms-grid-row-align: center;
+	        align-items: center;
+}
+.absl {
+	position: absolute;
+}
+  /*****************************************************/
+ /**************    2. Header Area   ****************/
+/*****************************************************/
+.hero-main-area {
+	background-image: url(images/headerbg.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	position: relative;
+}
+.header-area {
+	padding: 16px 0px;
+}
+.header-area.fixed-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #d4145a;
+	z-index: 99999999999999999999999999999999999999999999999999999999999;
+	box-shadow: 0px 5px 25px rgba(0,0,0,0.4);
+}
+.logo-area {}
+.logo-area a {}
+.logo-area a img {
+	height: 50px;
+}
+
+.menu-area {
+	text-align: right;
+}
+.menu-area ul {}
+.menu-area ul li {
+	display: inline-block;
+	margin: 0px 10px;
+	position: relative;
+}
+.menu-area ul li a {
+	color: #FFF;
+	font-weight: 500;
+	font-size: 14px;
+}
+.menu-area ul li a i {}
+
+.hero-area {
+	min-height: 75vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 0px;
+}
+.hero {
+	position: relative;
+	z-index: 999999;
+}
+.HeroIll {
+	width: 60%;
+	bottom: 0;
+	right: -6%;
+	max-height: 100%;
+	z-index: 1;
+}
+.elipsOne {
+	width: 150px;
+	height: 150px;
+	top: 14%;
+	right: 10%;
+	z-index: 2;
+}
+.elipsTwo {
+	width: 100px;
+	height: 100px;
+	top: 15%;
+	right: 51%;
+	z-index: 0;
+}
+.hero h2 {
+	font-size: 52px;
+	text-transform: uppercase;
+	color: #FFF;
+	line-height: 40px;
+	font-weight: 400;
+}
+.hero h1 {
+	font-size: 115px;
+	color: #FFF;
+	font-weight: 800;
+	line-height: 100px;
+	text-transform: uppercase;
+}
+.hero p {
+	color: #FFF;
+	font-size: 23px;
+	text-transform: uppercase;
+}
+
+
+.social-menu {
+	position: relative;
+	height: 100%;
+}
+.hero-social-area {
+	position: absolute;
+	top: 0;
+	left: -100%;
+}
+.hero-social-area ul {
+	position: relative;
+}
+.hero-social-area ul:after {
+	content: "";
+	width: 8%;
+	height: 50px;
+	position: absolute;
+	top: 105%;
+	left: 46%;
+	background: #FFF;
+}
+.hero-social-area ul li {
+	margin-bottom: 10px;
+}
+.hero-social-area ul li a {
+	width: 30px;
+	height: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	border: 2px solid #FFF;
+	border-radius: 100%;
+}
+.hero-social-area ul li a img {
+	height: 10px;
+}
+.scrollImg {
+	width: 3%;
+	left: 48.5%;
+	bottom: 0px;
+	cursor: pointer;
+}
+.search-box {
+	position: absolute;
+	right: -20px;
+	background: #FFF;
+	border-radius: 3px;
+	top: 200%;
+	z-index: 999;
+	box-shadow: 0px 5px 10px #0000007d;
+	min-width: 235px;
+	-webkit-transform: translate(0px, 18px);
+	        transform: translate(0px, 18px);
+	opacity: 0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	visibility: hidden;
+	-webkit-transition:0.5s;
+	transition: 0.5s;
+}
+.search-box.show {
+	-webkit-transform: translate(0px, 0px);
+	        transform: translate(0px, 0px);
+	opacity: 1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	visibility: visible;
+}
+.form {
+	padding: 10px;
+	position: relative;
+}
+.form:after {
+	content: "";
+	border-top: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid white;
+	border-left: 10px solid transparent;
+	position: absolute;
+	top: ;
+	bottom: 100%;
+	right: 17px;
+}
+.form form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.form form input {
+	width: 80%;
+	height: 35px;
+	padding: 0px 8px;
+	box-sizing: border-box;
+	border: 1px solid #d71f5a;
+	font-size: 12px;
+}
+.form form button {
+	width: 20%;
+	height: 35px;
+	padding: 0px 8px;
+	box-sizing: border-box;
+	border: none;
+	background: #d71f5a;
+	color: #FFF;
+}
+
+  /*****************************************************/
+ /**************    3. Who WE Area     ******************/
+/*****************************************************/
+.who-we-area {
+	padding: 100px 0px;
+	position: relative;
+}
+.about-ill {
+	width: 100px;
+	bottom: -150px;
+	right: 0;
+}
+.who-we {
+	position: relative;
+}
+.who-we:after {
+	content: "";
+	width: 45%;
+	height: 2px;
+	position: absolute;
+	background: #d4145a;
+	top: 0;
+	right: 0;
+}
+.who-we:before {
+	content: "";
+	width: 2px;
+	height: 50%;
+	position: absolute;
+	background: url(images/hor-border.png);
+	top: 0;
+	right: 0;
+	background-size: 100% 100%;
+}
+.who-we-image {
+	width: 50%;
+}
+.who-we-box {
+	width: 40%;
+	background: #D4145A;
+	padding: 15px;
+	position: absolute;
+	top: 28%;
+	left: 45%;
+}
+.section-heading {
+	position: relative;
+}
+.section-heading h2 {
+	font-size: 22px;
+	font-weight: 300;
+}
+.section-heading h1 {
+	font-size: 44px;
+	font-weight: 500;
+}
+.section-heading.white h1 {
+	color: #FFF;
+}
+.section-heading.white h2 {
+	color: #FFF;
+}
+.section-heading.mc h1 {
+	color: #D4145A;
+}
+.section-heading.mc h2 {
+	color: #D4145A;
+
+}
+.who-we-box > p {
+	margin-top: 104px;
+	color: #FFF;
+	font-size: 22px;
+	line-height: 32px;
+	font-weight: 400;
+}
+  /*****************************************************/
+ /**************    4. Our Service Area  ****************/
+/*****************************************************/
+.our-service-area {
+	padding: 100px 0px;
+	position: relative;
+}
+.service-ill {
+	bottom: -95px;
+	left: 0;
+	width: 150px;
+}
+.our-service-area:after {
+	content: "";
+	width: 24%;
+	height: 3px;
+	background: #d4145a;
+	position: absolute;
+	left: 38%;
+	bottom: 50px;
+}
+.section-heading.after {
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+.section-heading.after h1 {
+	display: inline-block;
+	position: relative;
+}
+.section-heading.after h1:after {
+	content: "";
+	position: absolute;
+	background: url(images/ver-border.png);
+	width: 90%;
+	height: 2px;
+	bottom: -15px;
+	left: 0;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.row.padding-30 {
+	padding: 0px 30px;
+}
+.single-service {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 40px;
+}
+.service-icon img {
+	width: 25px;
+}
+.service-icon {
+	padding-right: 10px;
+}
+.service-content {
+	padding-left: 10px;
+	border-left: 2px solid #d4145a;
+}
+.service-content p {
+	color: #d4145a;
+	font-size: 14px;
+	font-weight: 300;
+}
+.service-content h4 {
+	font-size: 28px;
+	color: #d4145a;
+	font-weight: 500;
+}
+  /*****************************************************/
+ /**************    4. Portfolio Area  ****************/
+/*****************************************************/
+.portfolio-area {
+	padding: 100px 0px;
+	position: relative;
+}
+.portfolio-ill {
+	bottom: 25px;
+	right: 0;
+	width: 125px;
+}
+.portfolio-area:after {
+	content: "";
+	width: 24%;
+	height: 3px;
+	background: #d4145a;
+	position: absolute;
+	left: 38%;
+	bottom: 50px;
+}
+.row.portfolio-showcase .col-md-3, .row.portfolio-showcase .col-md-6 {
+	padding: 0px 5px;
+}
+.row.portfolio-showcase {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.single-work {
+	background: #d4145a;
+	margin-bottom: 10px;
+	padding: 12px;
+}
+.single-work p {
+	color: #FFF;
+	font-size: 28px;
+	line-height: 34px;
+}
+.single-work a {
+	margin-top: 100px;
+	color: #FFF;
+	font-size: 15px;
+}
+.single-work a i {
+	margin-left: 5px;
+	-webkit-transition:0.2s;
+	transition: 0.2s;
+}
+.single-work a:hover i {
+	margin-left: 10px;
+}
+  /*****************************************************/
+ /**************    4. Subscribe Area  ****************/
+/*****************************************************/
+.subscribe-area {
+	background-image: url(images/subscribe-bg.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 40px 0px;
+}
+.subscribe-area .container {
+	position: relative;
+}
+.indexing {
+	position: relative;
+	z-index: 2;
+}
+.elipsOneSub {
+	width: 90px;
+	height: 90px;
+	top: 19%;
+	right: 15%;
+	z-index: 0;
+}
+.elipsTwoSub {
+	width: 100px;
+	height: 100px;
+	top: 40%;
+	right: 78%;
+	z-index: 0;
+}
+.subscribe-head {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.subscribe-head h1 {
+	font-weight: 600;
+	font-size: 40px;
+	color: #FFF;
+}
+.subscribe-head p {
+	color: #FFF;
+	font-size: 16px;
+}
+.subscribe-form {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.subscribe-form form {}
+.subscribe-form form input {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	border: none;
+	outline: none;
+	border-radius: 100px;
+}
+.footer-social-menu {
+	text-align: center;
+}
+.footer-social-menu ul {}
+.footer-social-menu ul li {
+	display: inline-block;
+	margin: 0px 5px;
+}
+.footer-social-menu ul li a {
+	width: 30px;
+	height: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	border: 2px solid #FFF;
+	border-radius: 100%;
+}
+.footer-social-menu ul li a img {
+	height: 10px;
+}
+  /*****************************************************/
+ /**************    4. For Responsive  ****************/
+/*****************************************************/
+#mobileNav {
+	display: none;
+}
+.logo-area.for-mobile {
+	display: none;
+}
+
